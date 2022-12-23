@@ -1,0 +1,44 @@
+<div style="width: 300px; padding: 10px">
+  <%= form_with(model: user) do |form| %>
+    <% if user.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+        <ul>
+          <% user.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div  class="field form-group">
+      <% form.label :first_name %>
+      <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+    </div>
+    <br>
+
+    <div  class="field form-group">
+      <% form.label :last_name %>
+      <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
+    </div>
+    <br>
+
+    <div  class="field form-group">
+      <% form.label :image %>
+      <%= form.file_field :image, class:"form-control", placeholder:"Last Name"  %>
+    </div>
+    <br>
+
+    <div  class="field form-group">
+      <%= form.label :role_id, style: "display: block" %>
+      <%= form.collection_select :role_id, Role.order(:role),:id,:role, include_blank: true, class: "dropdown-center" %>
+    </div>
+
+    <br>
+      <div class="actions">
+    <%= form.submit class:'btn btn-primary' %>
+      </div>
+  <% end %>
+
+</div>

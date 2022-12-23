@@ -1,0 +1,16 @@
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+/usr/share/rvm/rubies/ruby-2.7.5/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.5/lib/ruby/2.7.0 -r ./siteconf20221223-68381-12ne3eg.rb extconf.rb
+creating Makefile
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 debug.so ./.gem.20221223-68381-1swmbew/debug

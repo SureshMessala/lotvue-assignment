@@ -1,0 +1,15 @@
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+/usr/share/rvm/rubies/ruby-2.7.5/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.5/lib/ruby/2.7.0 -r ./siteconf20221223-68381-1edod9.rb extconf.rb
+creating Makefile
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/vishvajit/learning/lotvue/vendor/cache/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bootsnap.so ./.gem.20221223-68381-35wn5n/bootsnap

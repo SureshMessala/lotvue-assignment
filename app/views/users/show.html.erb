@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h3 class="display-7">
+    <%= @user.first_name %>
+    <%= @user.last_name %>
+  </h3>
+  <p class="lead">
+    <%= @user.role.role %>
+
+  <div style="width: 150px; height: 150px">
+    <%= image_tag@user.image, style: 'width: 150px' %>
+  </div>
+
+  </p>
+  <br/>
+
+  <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %>
+
+
+  <%= link_to 'Back', users_path, class:"btn btn-dark" %>
+
+  <%= button_to 'Delete', @user, method: :delete, class: "btn btn-danger" %>
+
+</div>
+
+
+
